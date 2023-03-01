@@ -14,5 +14,5 @@ Escolher uma das opções do menu principal
 Para facilitar utilização, todos os menus tem exemplos de como deve ser utilizado.
 
 Este usage example é da opção 1 para conversao de valores
-1[Exemplo usage](imagens/usageExample.png)
+![Exemplo usage](imagens/usageExample.png)
 
