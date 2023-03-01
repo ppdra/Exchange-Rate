@@ -1,7 +1,10 @@
-import os
-
+import os, colorama
+from colorama import Fore
 
 class Display:
+
+    colorama.init(autoreset=True)
+
 
     def main_menu(self):
         banner = "Welcome to Exchange Rate"
@@ -18,7 +21,7 @@ class Display:
 
     def convert_menu(self):
         os.system('clear')
-        print("""Usage example:\n
+        print(f"""{Fore.MAGENTA}Usage example:\n
 from: EUR
 to: BRL
 amount: 100
@@ -27,7 +30,7 @@ amount: 100
 
     def latest_menu(self):
         os.system('clear')
-        print("""Usage example:\n
+        print(f"""{Fore.MAGENTA}Usage example:\n
 base: EUR
 to: BRL
 \nresponse = 1 BRL equivale a 5 EUR\n================\n""")

@@ -1,4 +1,5 @@
-import requests, json, os
+import requests, json, os, colorama
+from colorama import Fore
 from apiKey import *
 
 class ApiRequests:
@@ -31,7 +32,7 @@ class ApiRequests:
         else:
             result = response.json()
             valor = result['result']
-            print(f"\n\n{amount} {base} é igual a {valor} {to}")
+            print(f"\n\n{Fore.GREEN}{amount} {base} é igual a {valor} {to}")
 
 
     def latest_rate(self,base,symbol):
@@ -59,7 +60,7 @@ class ApiRequests:
         else:
             result = response.json()
             valor = result["rates"]
-            print(f"1 {base} é igual a {valor[symbol]} {symbol}")
+            print(f"{Fore.GREEN}1 {base} é igual a {valor[symbol]} {symbol}")
 
 
     def show_all_symbols(self):
@@ -69,8 +70,8 @@ class ApiRequests:
             Ira retornar os symbols e o nome correspondente deste symbol para ser usado tanto no convert quanto no latest rate"""
 
         os.system('clear')
-        print("\nList of all symbols can be used: \n\n")
+        print(f"\n{Fore.CYAN}List of all symbols can be used: \n\n")
         with open("data/symbols.json") as file:
             data = json.load(file)
             for k,v in data['symbols'].items():
-                print(f"{k} > {v}")
+                print(f"{Fore.CYAN}{k} > {v}")

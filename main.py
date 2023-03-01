@@ -1,11 +1,12 @@
 from api import *
 from display import *
-import signal, sys
+import signal, sys, colorama
+from colorama import Fore
 
 
 #Ctrl+c
 def def_handler(sig,frame):
-    print("\n\n[!] Saindo...")
+    print(f"\n\n{Fore.RED}[!] Saindo...")
     sys.exit(1)
 
 signal.signal(signal.SIGINT, def_handler)
@@ -42,5 +43,5 @@ elif user_option == 3:
     api.show_all_symbols()
 
 elif user_option == 0:
-    print("\n\n[!] Saindo...")
+    print(f"\n\n{Fore.RED}[!] Saindo...")
     sys.exit(1)
