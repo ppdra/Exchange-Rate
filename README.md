@@ -11,4 +11,5 @@ Escolher uma das opções do menu principal
 - 2- Ira selecionar a moeda base e a moeda para qual quer ver a ultima cotação disponivel.
 - 3- Ira monstrar todas as moedas disponiveis para ser utilizada e qual seu Symbol (abreviação) para aquela moeda.
 
+### Para facilitar utilização, todos os menus tem exemplos de como deve ser utilizado.
 
