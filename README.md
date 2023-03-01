@@ -1,6 +1,8 @@
 # Exchange-Rate
 Exchange and latest rates
 
-## TODO
-- Escrever readme completo 
-- colocar cor para melhor visualizacao
+## Usage:
+`python3 main.py`
+
+Escolher uma das opções do menu principal
+![Opcao menu principal](imagens/opcaoMenuPrincipal.png)
