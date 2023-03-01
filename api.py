@@ -60,7 +60,8 @@ class ApiRequests:
         else:
             result = response.json()
             valor = result["rates"]
-            print(f"{Fore.GREEN}1 {base} é igual a {valor[symbol]} {symbol}")
+            date = result["date"]
+            print(f"\n{Fore.GREEN}1 {base} é igual a {valor[symbol]} {symbol}\nCotação do dia {date}")
 
 
     def show_all_symbols(self):
