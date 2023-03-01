@@ -16,3 +16,6 @@ Para facilitar utilização, todos os menus tem exemplos de como deve ser utiliz
 Este usage example é da opção 1 para conversao de valores
 ![Exemplo usage](imagens/usageExample.png)
 
+
+
+### Possivel falha se for utilizar no windows devido `os.system('clear')`
