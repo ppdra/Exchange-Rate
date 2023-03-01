@@ -27,7 +27,7 @@ class ApiRequests:
         response = requests.get(url, headers=headers, data = payload)
 
         if response.status_code != 200:
-            print("Provavel falha nos parametros da requisiçao")
+            print("\nProvavel falha nos parametros da requisiçao ou na chave api")
         else:
             result = response.json()
             valor = result['result']
@@ -55,7 +55,7 @@ class ApiRequests:
         response = requests.get(url, headers=headers, data = payload)
 
         if response.status_code != 200:
-            print("Provavel falha nos parametros da requisicao")
+            print("\nProvavel falha nos parametros da requisicao pu na chave api")
         else:
             result = response.json()
             valor = result["rates"]
