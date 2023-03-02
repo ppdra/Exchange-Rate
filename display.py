@@ -13,10 +13,10 @@ class Display:
         print(banner)
         print("=" * len(banner))
         print("""\n
-[ 1 ] - Convert
-[ 2 ] - Latest Rate
-[ 3 ] - Show all symbols
-[ 0 ] - Exit\n """)
+[ 1 ] - Converão de valores
+[ 2 ] - Ultimas Cotação
+[ 3 ] - Monstrar todas as moedas.
+[ 0 ] - Sair\n """)
 
 
     def convert_menu(self):
@@ -24,8 +24,8 @@ class Display:
         print(f"""{Fore.MAGENTA}Usage example:\n
 from: EUR
 to: BRL
-amount: 100
-\nresponse = 100 EUR is equal 500 BRL\n=============\n""")
+montante: 100
+\nresposta = 100 EUR é igual a 500 BRL\n=============\n""")
 
 
     def latest_menu(self):
@@ -33,4 +33,4 @@ amount: 100
         print(f"""{Fore.MAGENTA}Usage example:\n
 base: EUR
 to: BRL
-\nresponse = 1 BRL equivale a 5 EUR\n================\n""")
+\nresposta = 1 BRL é igual a EUR\n================\n""")

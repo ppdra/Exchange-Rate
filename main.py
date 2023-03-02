@@ -21,16 +21,16 @@ display = Display()
 
 #Program starts here
 display.main_menu()
-user_option = int(input('Choose an option: '))
+user_option = int(input('Escolha uma opção: '))
 
 if user_option not in (1,2,3,0):
-    print('Invalid option')
+    print('Opção invalida!!')
 
 elif user_option == 1:
     display.convert_menu()
     base = str(input('From: ')).upper()
     to = str(input('To: ')).upper()
-    amount = int(input('Amount: '))
+    amount = int(input('Montante: '))
     api.convert(base,to,amount)
 
 elif user_option == 2:
